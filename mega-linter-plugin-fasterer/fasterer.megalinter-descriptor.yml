@@ -1,8 +1,7 @@
 descriptor_id: CARBONARA_FASTERER # this is the identifier we use in .mega-linter.yml
 descriptor_type: language # language/format/tooling_format
 # descriptor_flavors: # Not used for 'plugin' descriptors, i.e. not relevant for Carbonara
-# - cupcake
-# - ruby
+# - carbonara
 file_extensions:
   - ".rb"
 # files_sub_directory:
@@ -40,9 +39,9 @@ linters: # required!
     # linter_rules_inline_disable_url:
     # linter_megalinter_ref_url:
 
-    cli_lint_warnings_regex: "^[^:]+:\\d+\\s+.*$"
+    cli_lint_warnings_regex: "(\d+)\s+offenses?\s+detected"
     # cli_lint_errors_regex: "(?m)^✖ "
     cli_lint_warnings_count: "regex_count"
     # cli_lint_errors_count: "regex_count"
 
-    version_extract_regex: 'using (RubyParser::V\d+)'
+    version_extract_regex: 'using RubyParser::(V\d+)'
