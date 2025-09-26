@@ -39,7 +39,7 @@ linters: # required!
     # linter_rules_inline_disable_url:
     # linter_megalinter_ref_url:
 
-    cli_lint_warnings_regex: "(\d+)\s+offenses?\s+detected"
+    cli_lint_warnings_regex: "(\\d+)\\s+offenses?\\s+detected"
     # cli_lint_errors_regex: "(?m)^✖ "
     cli_lint_warnings_count: "regex_count"
     # cli_lint_errors_count: "regex_count"
