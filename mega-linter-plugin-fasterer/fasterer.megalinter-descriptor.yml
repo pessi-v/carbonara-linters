@@ -9,7 +9,7 @@ file_extensions:
 linters: # required!
   # FASTERER
   - linter_name: fasterer # required!
-    cli_executable: fasterer # megalinter will call either cli_executable, or linter_name if cli_executable is not present
+    cli_executable: echo '**FASTERER**' && fasterer # megalinter will call either cli_executable, or linter_name if cli_executable is not present
     config_file_name: .fasterer.yml
     # is_formatter: false
 
